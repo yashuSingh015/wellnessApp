@@ -1,0 +1,52 @@
+{
+  "api": {
+    "apib221a4ae": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "wellnessappf18f1f7f"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "wellnessappf18f1f7f": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_wellnessappf18f1f7f_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "wellnessappf18f1f7f"
+        }
+      ]
+    },
+    "AMPLIFY_function_wellnessappf18f1f7f_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "wellnessappf18f1f7f"
+        }
+      ]
+    },
+    "AMPLIFY_function_wellnessappf18f1f7f_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "wellnessappf18f1f7f"
+        }
+      ]
+    }
+  }
+}
